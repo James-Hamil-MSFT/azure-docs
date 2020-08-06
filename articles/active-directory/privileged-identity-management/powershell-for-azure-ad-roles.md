@@ -27,14 +27,14 @@ This article contains instructions for using Azure Active Directory (Azure AD) P
 > Our official PowerShell is supported only if you are on the new version of Azure AD Privileged Identity Management. Please go to Privileged Identity Management and make sure you have the following banner on the quick start blade.
 > [![check the version of Privileged Identity Management you have](media/pim-how-to-add-role-to-user/pim-new-version.png "Select Azure AD > Privileged Identity Management")](media/pim-how-to-add-role-to-user/pim-new-version.png#lightbox)
 > If you don't have this banner, please wait as we are currently in the process of rolling out this updated experience over the next few weeks.
-> The Privileged Identity Management PowerShell cmdlets are supported through the Azure AD Preview module. If you have been using a different module and that module is now returning an error message, please start using this new module. If you have any production systems built on top of a different module, please reach out to pim_preview@microsoft.com
+> The Privileged Identity Management PowerShell cmdlets are supported through the Azure AD module. If you have been using a different module and that module is now returning an error message, please start using this new module. If you have any production systems built on top of a different module, please reach out to pim_preview@microsoft.com
 
 ## Installation and Setup
 
-1. Install the Azure AD Preview module
+1. Install the Azure AD module
 
     ```powershell
-    Install-module AzureADPreview
+    Install-Module AzureAD
     ```
 
 1. Ensure that you have the required role permissions before proceeding. If you are trying to perform management tasks like giving a role assignment or updating role setting, ensure that you have either the Global administrator or Privileged role administrator role. If you are just trying to activate your own assignment, no permissions beyond the default user permissions are required.
